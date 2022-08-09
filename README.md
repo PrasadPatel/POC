@@ -20,8 +20,6 @@ api endpoints and expose our own endpoints
 *Healthchecks url : ~/healthchecks-ui
 *Serilog : "./bin/log.txt"
 
-*Sonar report can be accessible on 
-http://192.168.0.86:9000/dashboard?id=SCS-POC
 
 ***Future Scope:
 -Authentication can be added
