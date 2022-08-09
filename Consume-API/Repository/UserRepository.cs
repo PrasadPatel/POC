@@ -6,7 +6,7 @@ namespace Consume_API.Repository
     /// </summary>
     public class UserRepository : Repository<User>, IUserRepository
     {
-        private IHttpClientFactory _clientFactory;
+        private readonly IHttpClientFactory _clientFactory;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UserRepository"/> class.
