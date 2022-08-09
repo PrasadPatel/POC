@@ -1,10 +1,7 @@
-﻿
-namespace Consume_API.IRepository
+﻿namespace Consume_API.IRepository
 {
     /// <summary>
-    /// 
+    /// IUserRepository interface to create repo for User entity
     /// </summary>
-    public interface IUserRepository : IRepository<User>
-    {
-    }
+    public interface IUserRepository : IRepository<User>{}
 }

@@ -1,8 +1,8 @@
-﻿
-namespace Consume_API.Middlewares
+﻿namespace Consume_API.Middlewares
 {
     /// <summary>
-    /// 
+    /// Middleware for handling global errors or exceptions
+    /// Responsible for catching the exceptions and logging to the log file
     /// </summary>
     public class ExceptionMiddleware
     {
@@ -10,7 +10,7 @@ namespace Consume_API.Middlewares
         private readonly ILogger _logger;
 
         /// <summary>
-        /// 
+        /// Initializes a new instance of the <see cref="ExceptionMiddleware"/> class.
         /// </summary>
         /// <param name="next"></param>
         /// <param name="logger"></param>

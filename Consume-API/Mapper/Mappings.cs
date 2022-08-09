@@ -1,5 +1,4 @@
-﻿
-namespace Consume_API.Mapper
+﻿namespace Consume_API.Mapper
 {
     /// <summary>
     /// Used for mapping DTO's to models

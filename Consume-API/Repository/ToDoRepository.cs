@@ -1,5 +1,4 @@
-﻿
-namespace Consume_API.Repository
+﻿namespace Consume_API.Repository
 {
     /// <summary>
     /// ToDo Repository inheriting generic repository and implementing IToDoRepository

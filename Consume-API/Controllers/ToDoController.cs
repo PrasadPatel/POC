@@ -1,5 +1,4 @@
-﻿
-namespace Consume_API.Controllers
+﻿namespace Consume_API.Controllers
 {
     /// <summary>
     /// ToDo controller
