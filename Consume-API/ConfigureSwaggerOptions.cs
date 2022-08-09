@@ -1,5 +1,4 @@
-﻿
-namespace Consume_API
+﻿namespace Consume_API
 {
     /// <summary>
     /// Options for Swagger configuration

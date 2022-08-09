@@ -1,5 +1,4 @@
-﻿
-namespace Consume_API.Repository
+﻿namespace Consume_API.Repository
 {
     /// <summary>
     /// Repository implementing IRepository of type T

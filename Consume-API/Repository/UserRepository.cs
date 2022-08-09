@@ -1,5 +1,4 @@
-﻿
-namespace Consume_API.Repository
+﻿namespace Consume_API.Repository
 {
     /// <summary>
     /// User repository implementing IUserRepository and inheriting Repository of type User

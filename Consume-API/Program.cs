@@ -1,4 +1,3 @@
-
 var builder = WebApplication.CreateBuilder(args);
 builder.Host.UseSerilog((hostingContext, services, loggerConfiguration) => {
     loggerConfiguration.ReadFrom.Configuration(hostingContext.Configuration);

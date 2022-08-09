@@ -1,14 +1,14 @@
 ﻿namespace Consume_API.Middlewares
 {
     /// <summary>
-    /// 
+    /// Middleware for logging request
     /// </summary>
     public class RequestLoggingMiddleware
     {
         private readonly RequestDelegate _next;
         private readonly ILogger _logger;
         /// <summary>
-        /// 
+        /// Initializes a new instance of the <see cref="RequestLoggingMiddleware"/> class.
         /// </summary>
         /// <param name="next"></param>
         /// <param name="logger"></param>

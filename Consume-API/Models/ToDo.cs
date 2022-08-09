@@ -1,5 +1,4 @@
-﻿
-namespace Consume_API.Models
+﻿namespace Consume_API.Models
 {
     /// <summary>
     ///  Model for ToDo
