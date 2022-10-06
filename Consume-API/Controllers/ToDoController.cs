@@ -1,4 +1,6 @@
-﻿namespace Consume_API.Controllers
+﻿using Consume_API.Filters;
+
+namespace Consume_API.Controllers
 {
     /// <summary>
     /// ToDo controller
@@ -6,6 +8,7 @@
     [Route("api/v{version:apiVersion}/ToDos")]
     [ApiVersion("1.0")]
     [ApiController]
+    [LogRequestTimeFilter]
     public class ToDoController : ControllerBase
     {
         private readonly IToDoRepository _toRepo;

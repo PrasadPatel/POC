@@ -1,4 +1,6 @@
-﻿namespace Consume_API.Middlewares
+﻿using System.Diagnostics;
+
+namespace Consume_API.Middlewares
 {
     /// <summary>
     /// Middleware for logging request
@@ -7,6 +9,7 @@
     {
         private readonly RequestDelegate _next;
         private readonly ILogger _logger;
+        readonly Stopwatch _stopwatch = new Stopwatch();
         /// <summary>
         /// Initializes a new instance of the <see cref="RequestLoggingMiddleware"/> class.
         /// </summary>
@@ -26,10 +29,13 @@
         {
             try
             {
+                _stopwatch.Start();
                 await _next(context);
             }
             finally
             {
+                _stopwatch.Stop();
+                _logger.LogInformation(context.Request?.Path.Value, context.Request?.Method, _stopwatch.ElapsedMilliseconds);
                 _logger.LogInformation(
                     "*Request {method} {url} => {statusCode}",
                     context.Request?.Method,
